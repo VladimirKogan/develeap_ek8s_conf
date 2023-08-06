@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: test-app
-        image: adv4000/k8sphp:latest
+        image: public.ecr.aws/x0v9s0q7/vladimir_public:latest
         ports:
         - containerPort: 80
