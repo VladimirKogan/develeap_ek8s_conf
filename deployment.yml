@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-app
+  name: test-app
   labels:
-    app: nginx-app
+    app: test-app
 spec:
   selector:
     matchLabels:
-      app: nginx-app
+      app: test-app
   replicas: 1
   template:
     metadata:
       labels:
-        app: nginx-app
+        app: test-app
     spec:
       containers:
-      - name: nginx-app
+      - name: test-app
         image: adv4000/k8sphp:latest
         ports:
         - containerPort: 80
