@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: nginx-app
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx-app
-        image: public.ecr.aws/x0v9s0q7/vladimir_public:latest
+        image: adv4000/k8sphp:latest
         ports:
         - containerPort: 80
