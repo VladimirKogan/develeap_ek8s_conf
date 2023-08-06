@@ -1,21 +1,21 @@
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: test-app
-  labels:
-    app: test-app
-spec:
-  selector:
-    matchLabels:
-      app: test-app
-  replicas: 1
-  template:
-    metadata:
-      labels:
-        app: test-app
-    spec:
-      containers:
-      - name: test-app
-        image: public.ecr.aws/x0v9s0q7/vladimir_public:latest
-        ports:
-        - containerPort: 80
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: test-app
+#  labels:
+#    app: test-app
+#spec:
+#  selector:
+#    matchLabels:
+#      app: test-app
+#  replicas: 1
+#  template:
+#    metadata:
+#      labels:
+#        app: test-app
+#    spec:
+#      containers:
+#      - name: test-app
+#        image: public.ecr.aws/x0v9s0q7/vladimir_public:latest
+#        ports:
+#        - containerPort: 80
